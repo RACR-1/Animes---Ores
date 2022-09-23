@@ -1,0 +1,378 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Standard Galactic Alphabet Regular';
+    src: url('http://www.fontsaddict.com/fontface/standard-galactic-alphabet-regular.ttf');
+  }
+
+body,html{
+    width:100%;
+    height:100%;
+}
+
+header {
+    display: flex; align-items: center; justify-content:space-between;
+    padding: 10px 35px; 
+    width:100%;
+    position: absolute; top:0; left:0;
+    z-index: 1;
+    color: white;
+    font-size: 14px;
+    text-transform:uppercase;
+    background-color: rgb(39, 39, 51);
+    font-family:tahoma;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+.header-search-bar{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search-bar .search-icon{
+    height:26px;
+    width:32px;
+    padding-right: 5px;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(193, 193, 193);
+}
+
+.header-search{
+    outline:none;
+    width: 100%;
+    height: 26px;
+    border-radius: 10px 0 0 10px ;
+    text-indent: 20px;
+}
+
+header h1.header-Title{
+    color: White;
+    text-shadow: 1px 1px black;
+}
+
+ul, ol, nav{
+    list-style:none;
+}
+
+nav.header-list{
+    display: flex;
+}
+
+nav.header-list li{
+    margin-right: 17px;
+}
+
+nav.header-list li a{
+    color:inherit;
+    text-decoration: none;
+}
+nav.header-list li:first-child{
+    margin-left:10px;
+}
+
+nav.header-list li:last-child{
+    margin-right: 0;
+}
+
+
+@media(max-width:1000px){
+    header {
+        flex-direction: column;
+    }
+    header h1.header-Title{
+        margin-bottom: 20px;
+    }
+    header div.header-search-bar{
+        margin-bottom: 20px;
+    }
+    .header-search-bar{
+        width:70%;
+    }
+}
+
+@media(max-width:600px){
+    .header-search-bar{
+        width:100%;
+    }
+}
+
+
+.watch-button{
+    color:inherit;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: linear-gradient(to right, rgb(133, 8, 33) 10%, rgb(225, 2, 47) 60%, rgb(225, 2, 47) 85%,  rgb(255, 205, 215) 100%);
+    font-size: 15px;
+    font-family:monospace;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px;
+}
+
+
+
+section.home {
+    width:100%;
+    height:100%;
+    position:relative;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+section.home h1,h3 {
+    text-shadow: -2px 1.5px rgb(148, 148, 148);
+}
+
+section.home h1{
+    font-size: 4em; 
+}
+
+section.home h3{
+    margin-bottom: 30px;
+}
+
+section.home a{
+    padding: 10px;
+    font-size:25px;
+}
+
+section.home div.img{
+    background-image: url("./imagem/itadori.jpg"), linear-gradient(to right, red 2%, white 80%);
+    background-size: contain; background-position:center;  background-repeat: no-repeat; background-attachment:fixed;
+    width:100%; height:100%;
+    position: absolute; top: 0; left: 0;
+    z-index: -1;
+}
+
+@media (max-width:1000px){
+    section.home div.img{
+        background-size: cover;
+    }
+    /* section.home h1{
+        font-size: 2em;
+    } */
+    section.home{
+        font-size: 16px;
+    }
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+
+ul.golden-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+ul.golden-content li{
+    height: 290px; 
+}
+
+ul.golden-content li:last-child{
+    margin-right: 0;
+}
+
+ul li.golden-left{
+    display: block;
+    flex-basis: 39%;
+    background-image: url("./imagem/jotaro.jpg");
+    background-size: cover;
+    margin-right: 3%;
+}
+
+ul li.golden-right{
+    flex-basis: 58%;
+}
+
+ul li.golden-right h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+ul li.golden-right p{
+    margin-bottom: 30px;
+}
+
+
+
+ul li.golden-right a{
+    padding: 10px 20px;
+    font-size: 30px;
+    float: left;
+}
+@media (max-width:1000px){
+    ul.golden-content li {
+        margin-bottom: 40px;
+        flex-basis: 100%;
+    }
+    ul.golden-content li:last-child{
+        margin-bottom:0;
+    }
+    .home h1{
+        margin-top: 100px;
+    }
+}
+
+/* diamond ore */
+
+.diamond-ore{
+    background-color: a;
+    background-image: linear-gradient(to right, aqua 0%, rgb(197, 197, 197) 40%, rgb(255, 0, 195) 90%, rgb(255, 0, 93) 98%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.diamond-ore h3{
+   align-self: flex-start;
+   margin-bottom: 20px;
+   font-size: 30px; 
+   text-shadow: none;
+   font-family: monospace;
+}
+
+.diamond-ore p{
+    
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.ul-flex-grid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.ul-flex-grid .diamond{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    padding-bottom: 40px;
+    border-bottom: 3px solid purple;
+}
+
+.ul-flex-grid .diamond:last-child{
+    margin-right: 0;
+}
+
+.ul-flex-grid .diamond img{
+    margin-bottom: 20px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.ul-flex-grid .diamond-watch{
+    margin-bottom: 20px;
+}
+
+@media(max-width:1000px){
+    .ul-flex-grid{
+        flex-direction: column;
+    }
+    .ul-flex-grid .diamond{
+        width: 100%;
+        height: 1;
+        margin-bottom: 20px;
+    }
+    .ul-flex-grid .diamond img{
+       height: 350px;
+    }
+    .ul-flex-grid .diamond:last-child{
+        margin-bottom: 0;
+    }
+}
+
+/* Emerald ore */
+
+section.emerald-ore{
+    width:100%;
+    display: flex; flex-direction: column;
+    /* background: linear-gradient(to bottom,rgba(128, 255, 0) 10%, rgba(128, 255, 0, 0.5) 100%), url("./imagem/7470a8f35e74385e40d3f46c06fe5143.png") ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.emerald-ore h3{
+    align-self: flex-start;
+   margin-bottom: 20px;
+   font-size: 30px;
+   text-shadow: none;
+   font-family: monospace;
+}
+
+.emerald-ore .ul-flex-grid{
+    gap: 0 3%;
+}
+
+.emerald-ore .ul-flex-grid li{
+    align-items: center;
+    gap: 20px 4%;
+    margin-bottom: 20px;
+}
+
+.ul-flex-grid li.emerald{
+    display: flex;
+    flex-flow: row  wrap;
+    background-color: aqua;
+    border: 2px solid rgb(167, 167, 167);
+    padding: 10px;
+    width:100%;
+}
+
+.ul-flex-grid li.emerald *:first-child{
+    flex-grow: 1;
+    width:60%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.ul-flex-grid li.emerald a{
+    font-size: 1.4em;
+    flex: 0 1 10%;
+}
+
+.ul-flex-grid li.emerald p{
+
+    flex: 1 0 100%;
+    padding: 10px 50% 0 0;
+    border-top: 3px solid black;
+}
+
+
+footer{
+    height: 130px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
